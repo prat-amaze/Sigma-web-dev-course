@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+</head>
+
+<style>
+    :root{
+        --color: black;
+        --buttonColor: rgb(255, 196, 0);
+    }
+
+    *{
+        margin: 0;padding: 0;
+    }
+
+    .navbar{
+        border: 2px solid;
+        background-color: var(--color);
+        padding: 4px 4px;
+        position: relative;
+
+        /* color: white; */    
+    }
+
+    ul{
+        display: flex;
+    }
+
+    ul li{
+        list-style: none;
+        margin-right: 15px;
+        border: 2px solid;
+        padding: 5px 16px;
+        background-color: var(--buttonColor);
+        cursor: pointer;
+        border-radius: 8px 4px;
+        font-weight: bolder;
+    }
+
+    ul li:hover{
+        background-color: yellow;
+    }
+
+    .searchbar{
+        margin-left: auto;
+        position: relative;
+    }
+
+    .searchbar input{
+        padding: 5px 20px;
+    }
+
+</style>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <div class="searchbar">
+                <input type="text" placeholder="Search...">
+            </div>    
+        </ul>
+    </nav>
+</body>
+</html>

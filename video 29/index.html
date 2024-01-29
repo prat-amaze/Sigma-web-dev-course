@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting Card</title>
+</head>
+
+<style>
+    body{
+        background-color: #f4f4f4;
+    }
+    .card {
+        width: 37vw;
+        max-width: 500px;
+        height: 90vh;
+        border: 2px solid  #ddd;
+        margin: auto;
+        border-radius: 18px;
+        position: relative;
+    }
+
+    .img {
+        text-align: center;
+        position: relative;
+    }
+
+    div img {
+        /* width: 34em; */
+        width: 95%;
+        height: auto;
+        top: 11px;
+        position: relative;
+        /* text-align: center; */
+        border-radius: 18px;
+    }
+
+    div ul {
+        margin-top: 25px;
+        list-style: none;
+
+    }
+
+    div ul li {
+        display: inline;
+        padding: 15px;
+        /* text-align: left; */
+    }
+
+    ul button {
+        background-color: rgb(241, 241, 241);
+        border-radius: 18px;
+        border: 2px solid rgb(230, 230, 230);
+        box-shadow: 0px 0px 5px 0px black;
+        height: 40px;
+        width: 60px;
+    }
+
+    ul button:hover {
+        background-color: rgb(205, 205, 225);
+    }
+
+    /* .text{
+    text-align: center;
+} */
+
+    h1 {
+        text-align: center;
+        margin-top: 25px;
+        position: relative;
+    }
+
+    h2 {
+        font-weight: 500;
+        /* text-align: center; */
+        left: 0.8em;
+        position: relative;
+        width: 90%;
+    }
+
+    div>button {
+        border: 2px solid rgb(93, 195, 246);
+        background-color: aqua;
+        border-radius: 18px;
+
+    }
+
+    .read {
+        text-align: center;
+        padding: 3px;
+    }
+
+    .read button:hover {
+        background-color: aquamarine;
+    }
+</style>
+
+<body>
+    <div class="card">
+        <div class="img">
+            <img src="card.jpg" alt="Image.jpg">
+        </div>
+
+        <div class="text">
+            <ul>
+                <span>
+                    <li><button>Nature</button></li>
+                    <li><button>Lake</button></li>
+                </span>
+            </ul>
+
+            <h1>Lorem, ipsum dolor.
+
+                <h2>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur aliquam dolorum numquam.
+                    Suscipit cupiditate, pariatur labore recusandae veritatis obcaecati expedita alias voluptatibus
+                    natus.
+                </h2>
+            </h1>
+        </div>
+
+        <div class="read">
+            <button>Read More</button>
+        </div>
+
+    </div>
+</body>
+
+</html>

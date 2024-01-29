@@ -1,0 +1,13 @@
+p:first-child{
+    background-color: yellow;
+    color: rgb(252, 6, 6);
+}
+div p{
+    background-color: black;
+    color: yellow;
+}
+*{
+    margin: 0%;
+    padding: 5px;
+    border: 2px solid blue;
+}
