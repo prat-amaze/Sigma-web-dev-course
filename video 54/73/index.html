@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background-color: #181818; /* YouTube's dark background */
+            color: #fff; /* Light text color */
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .card {
+            display: flex;
+            align-items: center;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #202020; /* Dark card background */
+            width: 100%;
+            max-width: 800px; /* Match YouTube's layout width */
+            margin: 0 auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+        }
+
+        .card .l {
+            width: 35%; /* Thumbnail occupies 35% of the card width */
+            min-width: 150px; /* Ensure thumbnail has a minimum width */
+        }
+
+        .card .l img {
+            width: 100%; /* Make the image fill the left container */
+            height: 100%; /* Ensure the height matches */
+            object-fit: cover; /* Maintain aspect ratio */
+        }
+
+        .card .r {
+            padding: 10px;
+            flex: 1; /* Let the right section fill the remaining space */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 5px; /* Add spacing between text lines */
+        }
+
+        .card h3 {
+            margin: 0;
+            font-size: 18px;
+            font-weight: 500;
+            color: #fff; /* White for title */
+            line-height: 1.5;
+            display: -webkit-box;
+            -webkit-line-clamp: 2; /* Show max 2 lines, truncate rest */
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .card p {
+            margin: 0;
+            font-size: 14px;
+            color: #aaa; /* Light gray for metadata */
+            line-height: 1.5;
+        }
+
+        .card p strong {
+            color: #fff; /* Highlight labels */
+        }
+
+        .button {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            background-color: #cc0000; /* YouTube red */
+            color: #fff;
+        }
+
+        button:hover {
+            background-color: #a00000; /* Darker red on hover */
+        }
+
+        /* .left{
+            width: 25%;
+            height: 100%;
+            background-color: black;
+        }
+        .right{
+            width: 75%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        } */
+    </style>
+
+</head>
+<body>
+    <div class="left">
+        
+    </div>
+    <div class="right">
+        <div class="container" id="container">
+            <div class="card">
+                <div class="l">
+
+                </div>
+                <div class="r">
+
+                </div>
+            </div>
+        </div>
+        <div class="button" id="button">
+            <button>Add new Video</button>
+        </div>
+    </div> 
+
+    <script src="script.js"></script>
+</body>
+</html>

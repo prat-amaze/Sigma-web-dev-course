@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">Hey I am a box</div>
+        Hey I am not a box
+    </div>
+    <script>
+        let div= document.createElement("div");
+        div.setAttribute("class", "created");
+        div.innerText= "created by Pratyush"
+        document.querySelector(".container").insertAdjacentElement()
+    </script>
+</body>
+
+</html>
